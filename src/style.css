@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: linear-gradient(rgba(7, 7, 7, 0.4), rgba(7, 7, 7, 0.4)), url('/public/assets/images/background/farm.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f5f5f5;
+}
+
+.app {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.title--1,
+.instructions {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.start--btn {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border-color: #805d0a;
+  border-width: 3px;
+  font-size: 1rem;
+  background-color: #79f53f;
+  color: #333333;
+}
+
+.disabled--btn {
+  cursor: not-allowed;
+  background-color: #bbbbbb;
+}
+
+.statistics {
+  width: 90%;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.cards-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+  border-color: #8919b2;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.animal--img {
+  width: 100%;
+  background-color: #fded9c;
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+.card:hover {
+  background-color: #dddddd;
+}
